@@ -1,2 +1,3 @@
 # arcpy-report
-Arcpy script that creates a report with the number of null and blank rows by field of a gdb
+
+This Arcpy script creates a xlsx file that shows the number of null and blank rows by field of a gdb. It creates a sheet by table and feature class, inside each sheet populate extra information.
