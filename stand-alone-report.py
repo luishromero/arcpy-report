@@ -15,7 +15,7 @@ outWorkbook = xlsxwriter.Workbook("stats.xlsx")
 
 # function used to build reports from feature classes
 def fc_stats():
-    outSheet = outWorkbook.add_worksheet(fc)
+    outSheet = outWorkbook.add_worksheet(fc[0:30])
     totalRows = arcpy.GetCount_management(fc)
     spatialRef = arcpy.Describe(fc).spatialReference
     fields = arcpy.ListFields(fc)
@@ -61,7 +61,7 @@ def fc_stats():
 
 # function used to build report from tables
 def tb_stats():
-    outSheet = outWorkbook.add_worksheet(tb)
+    outSheet = outWorkbook.add_worksheet(tb[0:30])
     totalRows = arcpy.GetCount_management(tb)
     fields = arcpy.ListFields(tb)
     stats_fields = []
