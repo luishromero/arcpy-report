@@ -4,10 +4,6 @@
 
 <p>**This tool requires an active ArcGIS PRO licence to run</p>
 
-## stand-alone-report.py
-
-<p>The script to be excuted in the CLI</p>
-
 ## script-tool-report.py
 
 <p>The script to be used in a script tool</p>
